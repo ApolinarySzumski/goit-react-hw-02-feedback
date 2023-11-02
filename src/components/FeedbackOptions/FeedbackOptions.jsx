@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <div>
@@ -9,6 +11,11 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => {
       ))}
     </div>
   );
+};
+
+FeedbackOptions.propTypes = {
+  options: PropTypes.array,
+  onLeaveFeedback: PropTypes.func,
 };
 
 export default FeedbackOptions;
